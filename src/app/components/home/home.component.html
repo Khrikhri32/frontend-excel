@@ -1,0 +1,32 @@
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Home</h2>
+  
+    <div class="d-flex justify-content-center gap-3 mb-4">
+      <input type="file" (change)="onFileChange($event)" class="form-control w-auto" />
+      <button (click)="onUpload()" class="btn btn-success">Cargar</button>
+      <button (click)="onConsultar()" class="btn btn-primary">Consultar</button>
+    </div>
+  
+    <p *ngIf="successMessage" class="alert alert-success text-center">{{ successMessage }}</p>
+    <p *ngIf="errorMessage" class="alert alert-danger text-center">{{ errorMessage }}</p>
+  
+    <table *ngIf="usuarios.length > 0" class="table table-bordered table-striped">
+      <thead class="table-light">
+        <tr>
+          <th>Nombre</th>
+          <th>Rut</th>
+          <th>Campo1</th>
+          <th>Campo2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios">
+          <td>{{ usuario.nombre }}</td>
+          <td>{{ usuario.rut }}</td>
+          <td>{{ usuario.campo1 }}</td>
+          <td>{{ usuario.campo2 }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

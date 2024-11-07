@@ -1,0 +1,104 @@
+/* Estilo general del contenedor */
+.home-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .page-title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para los botones y el input de archivo */
+  .file-upload-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .file-input {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Estilo para los botones */
+  .btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;  /* Bordes redondeados */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  .btn-primary {
+    background: linear-gradient(145deg, #4CAF50, #45a049);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(145deg, #45a049, #4CAF50);
+    transform: translateY(-3px); /* Efecto de desplazamiento */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-secondary {
+    background: linear-gradient(145deg, #007BFF, #0056b3);
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background: linear-gradient(145deg, #0056b3, #007BFF);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo para los mensajes de éxito y error */
+  .success-message {
+    color: green;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para la tabla */
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .user-table th, .user-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .user-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .user-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  

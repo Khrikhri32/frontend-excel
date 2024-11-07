@@ -1,0 +1,37 @@
+<div class="login-container container mt-5">
+    <h2 class="text-center mb-4">Iniciar Sesión</h2>
+  
+    <form (ngSubmit)="onLogin()" class="bg-light p-4 rounded shadow-sm">
+      <div class="mb-3">
+        <label for="username" class="form-label">Usuario</label>
+        <input
+          type="text"
+          id="username"
+          [(ngModel)]="username"
+          name="username"
+          class="form-control"
+          required
+        />
+      </div>
+  
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input
+          type="password"
+          id="password"
+          [(ngModel)]="password"
+          name="password"
+          class="form-control"
+          required
+        />
+      </div>
+  
+      <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+      </div>
+    </form>
+  
+    <!-- Mensaje de error -->
+    <p *ngIf="errorMessage" class="alert alert-danger mt-3 text-center">{{ errorMessage }}</p>
+  </div>
+  
